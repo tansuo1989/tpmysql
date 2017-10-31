@@ -17,8 +17,25 @@
  * 获取和设置配置参数 支持批量定义
  */
 function C($key){
-    $config=include("./config.php");
+    $config=include(MURL."/config.php");
     return $config[$key];
+}
+
+//命令行打印数据
+function console($str,$step=0){
+    if(is_array($str)){
+        foreach($str as $k=>$v){
+            if(!is_array($v)){
+                 echo str_repeat(" ",$step),$k,":",$v,"\n";
+            }else{
+                $step++;
+                console($v,$step);
+            }
+           
+        }
+    }else{
+        echo $str,"\n";
+    }
 }
 
 /**

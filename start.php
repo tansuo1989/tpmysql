@@ -1,10 +1,13 @@
 <?php 
 
-include("./Db.php");
-include("./Driver.php");
-include("./Mysql.php");
-include("./Model.php");
-include("./functions.php");
+// include("./Think.php");
+define("MURL",dirname(__FILE__));
+
+include(MURL."/Db.php");
+include(MURL."/Driver.php");
+include(MURL."/Mysql.php");
+include(MURL."/Model.php");
+include(MURL."/functions.php");
 
 
 define("APP_DEBUG",true);
