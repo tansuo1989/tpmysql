@@ -1,6 +1,7 @@
 <?php 
+ini_set('session.auto_start', 0);
+session_start();
 
-// include("./Think.php");
 define("MURL",dirname(__FILE__));
 
 include(MURL."/Db.php");

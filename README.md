@@ -9,7 +9,9 @@
 
  修改config.php 中的配置信息，
  直接include("./start.php") 文件即可。
+
+
+ 
  具体使用方法请查看tp官方手册：<a href="http://document.thinkphp.cn/manual_3_2.html#model">ThinkPHP 3.2 官方手册</a>
 
  
- 我的使用场景主要是为了在命令中操作数据库的时候的方便。
